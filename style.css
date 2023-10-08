@@ -1,0 +1,1045 @@
+body {
+    background-color:#d9d9d9;
+}
+
+/* MEDIA FOR DESKTOP */
+
+  /*** Media for desktop ***/
+  /*@media (min-width: 1025px) */
+
+/* HEADER */
+    .top-section {
+        width: 100%;
+    }
+    
+    .hero-background-image {
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .mobile-background-image {
+        display: none;
+    }
+
+    .title-container {
+        top: 280px;
+        left: 5%;
+        width: 40%;
+        height: auto;
+        position: relative;
+        z-index: 4;
+    }
+
+    .sub-title-container {
+        display: flex;
+        justify-content: row;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Roboto', sans-serif;
+        color: whitesmoke;
+        font-size: 20px;
+        margin-left: 4px;
+    }
+
+    .sub-title-part-1 {
+        padding-right: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .sub-title-part-2 {
+        font-weight: bold;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .title-container h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 60px;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .title-container h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        color: whitesmoke;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .button-icons-container {
+        position: absolute;
+        top: 100px;;
+        left: 5%;
+        z-index: 2;
+        width: 12%;
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .circle-1, .circle-2 {
+        cursor: pointer;
+        width: 55px;
+        height: 55px;
+        border: 3px solid #FFFFFF;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-1:hover, .circle-2:hover {
+        transform: scale(1.1);
+    }
+
+    .linkedin-icon {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        margin-left: 6px;
+        background: transparent url('./header-icons/iconmonstr-linkedin-1.svg') 0% 0% no-repeat padding-box;
+        border: none;
+    }
+
+    .github-icon {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        margin-left: 1px;
+        background: transparent url('./header-icons/github.svg') 0% 0% no-repeat padding-box;
+        border: none;
+    }
+
+    .profile-picture {
+        top: 320px;
+        left: 75%;
+        width: 20%;
+        height: auto;
+        border-radius: 50%;
+        border: white solid 2px;
+        position: absolute;
+        z-index: 3;
+    }
+
+/* MAIN/OTHER SECTIONS: */
+    .other-sections {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 520px;
+        left: 0;
+    }
+
+    .summary-section {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        height: 200px;
+        padding-top: 20px;
+        padding-right: 200px;
+        padding-left: 200px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .summary-line {
+        height: 3px;
+        width: 50px;
+        background: #008000;
+        position: relative;
+        float: left;
+        top: 7px; 
+        margin-right: 8px;
+      }
+
+      .summary-line::after {
+        content: '';
+        height: 10px;
+        width: 10px;
+        position: relative;
+        float: right;
+        top: -3px;
+        right: -1px;
+        border-radius: 50%;
+        background: green;
+      }
+
+    .tech-section {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        height: 200px;
+        background-color: white;
+        padding-top: 10px;
+        padding-right: 300px;
+        padding-left: 300px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tech-section h2 {
+        background-color: #008000;
+        margin-bottom: 30px;
+        padding-right: 7px;
+        padding-left: 7px;
+        color: white;
+        width: fit-content;
+    }
+
+    .tech-section p {
+        color: black;
+        text-align: center;
+        margin: 4px;
+    }
+
+    .tech-section span {
+        color: green;
+    }
+
+    .tech-section a {
+        text-decoration: none;
+    }
+
+    .projects-section {
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        height: 2050px;
+        padding-top: 10px;
+        padding-right: 200px;
+        padding-left: 200px;
+        padding-bottom: 30px;
+        background-color: #d9d9d9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .projects-section h2 {
+        width: fit-content;
+        margin-bottom: 30px;
+        padding-right: 7px;
+        padding-left: 7px;
+        background-color: green;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .latest-project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .latest-project h3 {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .code-tags-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .featured-projects-1, .featured-projects-2 {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .weather-app, .buisness-site {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+        margin-right: 40px;
+    }
+
+    .pizza-bot, .food-review-site {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+        margin-left: 40px;
+    }
+
+    .project-music-releases img, .weather-app img, .pizza-bot img, .buisness-site img, .food-review-site img {
+        width: 300px;
+        height: auto;
+    }
+
+    .project-music-releases a, .weather-app a, .pizza-bot a, .buisness-site a, .food-review-site a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .project-music-releases h4, .weather-app h4, .pizza-bot h4, .buisness-site h4, .food-review-site h4 {
+        color: green;
+    }
+
+    .code-tags {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tags {
+        background-color: green;
+        color: white;
+        margin: 2px;
+        padding-top: 3px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 3px;
+    }
+
+    .other-projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    
+    .other-projects h3 {
+        width: fit-content;
+        color: green;
+    }
+
+    .other-projects-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .cluedo-picker {
+        margin-bottom: 20px;
+    }
+
+    .cluedo-picker {
+        text-decoration: none;
+        color: black;
+    }
+
+    .other-projects-text {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .other-projects-text h4 {
+        color: green;
+        padding-right: 1px;
+        text-decoration: underline green;
+    }
+
+    .other-projects-text p {
+        color: black;
+        text-decoration: underline black;
+    }
+
+    .arrow {
+        color: green;
+        font-weight: bold;
+        text-decoration: underline green;
+    }
+
+    .thoughts {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        height: 850px;
+        background-color: white;
+        padding-top: 30px;
+        padding-right: 300px;
+        padding-left: 300px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .thoughts a {
+        text-decoration: none;
+    }
+
+    .thoughts-1-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .thoughts-1-card img {
+        width: 400px;
+        height: auto;
+        border: 1px solid #d9d9d994;
+        padding: 10px;
+        box-shadow: 5px 10px #d9d9d994;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .textbox {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+    }
+
+    .textbox p1 {
+        color: green;
+    }
+
+
+    .h2-thoughts {
+        width: fit-content;
+        margin-bottom: 40px;
+        padding-right: 7px;
+        padding-left: 7px;
+        background-color: green;
+        color: white;
+    }
+
+    .h2-thoughts-mobile {
+        display: none;
+        width: fit-content;
+        margin-bottom: 40px;
+        padding-right: 7px;
+        padding-left: 7px;
+        background-color: green;
+        color: white;
+    }
+
+    .thoughts h3 {
+        color: green;
+    }
+
+    .thoughs-box p {
+        font-family: 'Roboto', sans-serif;
+        overflow: hidden; 
+        border-right: .15em solid black; 
+        white-space: nowrap;
+        margin: 0 auto; 
+        letter-spacing: .10em;
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: black; }
+      }
+
+    .skills {
+        width: 100%;
+        height: 630px;
+        padding-top: 30px;
+        padding-right: 300px;
+        padding-left: 300px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .skills h2 {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 30px;
+        padding-right: 7px;
+        padding-left: 7px;
+        width: fit-content;
+        background-color: green;
+        color: white;
+    }
+
+    .skills-container {
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .skills-container h3 {
+        color: green;
+    } 
+
+    .code, .toolbox {
+        width: 120px;
+        margin-right: 80px;
+    }
+
+    .more {
+        width: 120px;
+    }
+
+    .upcoming {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .upcoming-mobile {
+        display: none;
+    }
+
+    .upcoming h3 {
+        color: green;
+        margin-right: 10px;
+    }
+
+    .for-more {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        background-color: white;
+        height: 200px;
+        padding-top: 30px;
+        padding-right: 300px;
+        padding-left: 300px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .for-more h2 {
+        width: fit-content;
+        margin-bottom: 30px;
+        padding-right: 7px;
+        padding-left: 7px;
+        background-color: green;
+        color: white;
+    }
+
+    .button-icons-container-2 {
+        width: 400px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .button-icons-container-2 p {
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        color: green;
+        font-weight: bold;
+    }
+
+    .linkedin, .github {
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .circle-4, .circle-5 {
+        cursor: pointer;
+        width: 55px;
+        height: 55px;
+        border: 3px solid green;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-4, .circle-5 {
+        transform: scale(1.1);
+        /* No hover effect here on the icons as in the header, just for bigger icons this way */
+    }
+
+    .linkedin-icon-2 {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        margin-left: 6px;
+        background: transparent url('./icons-2/iconmonstr-linkedin-1.svg') 0% 0% no-repeat padding-box;
+        border: none;
+    }
+
+    .github-icon-2 {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        margin-left: 1px;
+        background: transparent url('./icons-2/github.svg') 0% 0% no-repeat padding-box;
+        border: none;
+    }
+
+    .contact {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        height: 300px;
+        padding-top: 30px;
+        padding-right: 300px;
+        padding-left: 300px;
+        padding-bottom: 30px;
+        background-color:green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact h2 {
+        width: fit-content;
+        background-color: green;
+        color: white;
+    }
+
+    .contact p {
+        width: fit-content;
+        color: white;
+    }
+
+    .email , .phone {
+        text-decoration: none;
+    }
+
+/*** Media for mobile ***/
+    @media (min-width: 1px) and (max-width: 667px){
+ /* HEADER */
+    .hero-background-image {
+       display: none;
+    }
+
+    .mobile-background-image {
+        display: block;
+        width: 100%;
+        height: 500px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .title-container {
+        top: 240px;
+        left: 10px;
+        width: 80%;
+    }
+
+    .sub-title-container {
+        font-size: 16px;
+    }
+
+    .sub-title-part-1 {
+        padding-right: 1px;
+    }
+
+    .title-container h1 {
+        font-size: 30px;
+    }
+
+    .title-container h2 {
+        font-size: 18px;
+    }
+
+    .button-icons-container {
+        top: 400px;
+        left: 10px;
+        width: 40%;
+        transform: scale(0.6);
+    }
+
+    .circle-1, .circle-2, .circle-3 {
+        border: 3.5px solid #FFFFFF;
+    }
+
+    .profile-picture {
+        border: 3px white solid;
+        top: 360px;
+        left: 50%;
+        width: 40%;
+    }
+
+    /* MAIN/OTHER SECTIONS: */
+    .other-sections {
+        top: 500px;
+    }
+
+    .summary-section {
+        height: 250px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .tech-section {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .projects-section {
+        height: 2100px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .featured-projects-1, .featured-projects-2 {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .weather-app, .buisness-site {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .pizza-bot, .food-review-site {
+        margin-left: 0px;
+    }
+
+    .buisness-site, .food-review-site {
+        display: none;
+    }
+
+    .other-projects-container {
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .food-review-site-2, .buisness-site-2 {
+        display: block;
+    }
+
+    .food-review-site-2 h4, .buisness-site-2 h4{
+        margin-right: 20px;
+    } 
+
+
+    .thoughts {
+        height: 850px;
+        padding-right: 30px;
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .thoughts-1-card img {
+        width: 280px;
+    }
+
+    .textbox {
+        width: 300px;
+    }
+
+    .h2-thoughts {
+        display: none
+    }
+
+    .h2-thoughts-mobile {
+        display: block;
+    }
+
+    .thoughts h3 {
+        color: green;
+    }
+
+    .skills {
+        height: 740px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .code, .toolbox {
+        width: 120px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .more {
+        width: 120px;
+    }
+
+    .upcoming-mobile {
+        display: block;
+        width: 120px;
+    }
+
+    .upcoming {
+       display: none;
+    }
+
+    .for-more {
+        height: 200px;
+        background-color: white;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .button-icons-container-2 {
+        width: 300px;
+    }
+    .button-icons-container-2 p {
+        font-size: 10px;
+    }
+
+    .contact {
+        height: 700px;
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 200px;
+    }
+  }
+
+  /*** Media for tablet ***/
+  @media (min-width: 668px) and (max-width: 1024px) {
+        
+    /* HEADER */
+    .hero-background-image {
+        height: 400px;
+    }
+
+    .title-container {
+        top: 90px;
+        left: 7%;
+        width: 30%;
+    }
+
+    .sub-title-container {
+        font-size: 16px;
+        width: 300px;
+    }
+
+    .sub-title-part-1 {
+        padding-right: 4px;
+    }
+
+    .title-container h1 {
+        font-size: 43px;
+    }
+
+    .title-container h2 {
+        font-size: 18px;
+        width: 300px;
+    }
+
+    .button-icons-container {
+        top: 60px;;
+        left: 65%;
+        width: 26%;
+    }
+
+    .circle-1, .circle-2, .circle-3 {
+        border: 3.5px solid #FFFFFF;
+        transform: scale(0.75);
+    }
+
+    .linkedin-icon, .github-icon, .stack-overflow-icon {
+        transform: scale(0.8);
+    }
+
+    .profile-picture {
+        top: 230px;
+        left: 67%;
+        width: 22%;
+        border: white solid 3px;
+    }
+
+    /* MAIN/OTHER SECTIONS: */
+    .other-sections {
+        top: 360px;
+    }
+
+    .summary-section {
+        height: 200px;
+        margin-top: 30px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .tech-section {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .projects-section {
+        font-family: 'Roboto', sans-serif;
+        height: 2100px;
+        padding-top: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+        background-color: #d9d9d9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .latest-project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .latest-project h3 {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .code-tags-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .featured-projects-1, .featured-projects-2 {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .weather-app, .buisness-site {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .pizza-bot, .food-review-site {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 200px;
+        margin-left: 10px;
+    }
+
+    .project-music-releases img, .weather-app img, .pizza-bot img, .buisness-site img, .food-review-site img {
+        width: 100px;
+        height: auto;
+    }
+
+    .thoughts {
+        height: 850px;
+        padding-right: 30px;
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .thoughts-1-card img {
+        width: 280px;
+    }
+
+    .textbox {
+        width: 300px;
+    }
+
+    .h2-thoughts {
+        display: block;
+    }
+
+    .h2-thoughts-mobile {
+        display: none;
+    }
+
+    .thoughts h3 {
+        color: green;
+    }
+
+    .skills {
+        height: 740px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .code, .toolbox {
+        width: 200px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .more {
+        width: 200px;
+    }
+
+    .for-more {
+        height: 200px;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .button-icons-container-2 {
+        width: 500px;
+    }
+    .button-icons-container-2 p {
+        font-size: 16px;
+    }
+
+    .contact {
+        height: 1000px;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 200px;
+    }
+
+}
